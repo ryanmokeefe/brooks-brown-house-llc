@@ -114,7 +114,19 @@ nav span {
     flex-direction: row;
 }
 .problem, .solution {
-    width: 30%;
+    display: block;
+    height: 100%;
+    width: 46%;
     margin: 0 auto;
+
+}
+/* .prob-sol-img {
+    display: block;
+    width: 200%;
+    height: 100%;
+    overflow: hidden;
+} */
+.card-image {
+    /* width: 200%; */
 
 }

@@ -3,4 +3,118 @@ body {
     margin: 0;
     padding: 0;
 }
+/* START: basic mock-up */
+.header {
+    background-image: url("./img/IMG_1678.jpg");
+    /* background-size: contain; */
+    background-size: 80vw auto;
+    background-repeat: no-repeat;
+    background-position: center;
 
+}
+.img-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    width: 80vw;
+    padding: 0;
+    margin: 0 auto;
+}
+.footer .imgLg {
+    width: 50vw;
+}
+.footer .imgSm {
+    width: 30vw;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+nav {
+    height: 50px;
+
+}
+/* END : basic mock-up */
+.header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #465298;
+    color: #fff;
+    font-size: 100%;
+}
+.fixedNav {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+.scrollNav {
+    position: absolute;
+    bottom: 0;
+}
+nav a {
+    font-size: 16px;
+    width: 30%;
+    text-align: center;
+    letter-spacing: 1px;
+    transition: 100ms;
+
+}
+nav a:hover {
+    transition: 500ms;
+    color: rgba(255, 255, 255, .5);
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+nav span {
+    border: 2px solid rgba(206, 210, 233, 0.5);
+    border-radius: 10px;
+    height: 30px;
+    width: 0;
+    margin: 0;
+    padding: 0;
+}
+.section {
+
+    background: repeating-linear-gradient(
+        135deg,
+        #606dbc,
+        #606dbc 10px,
+        #465298 10px,
+        #465298 20px
+    );
+    margin: 20px 0;
+
+}
+.card {
+
+    background-color: rgba(255, 255, 255, .5);
+}
+
+
+/* SPECIFIC SECTIONS */
+
+/* .community {
+} */
+.program {
+    display: flex;
+    flex-direction: row;
+}
+.problem, .solution {
+    width: 30%;
+    margin: 0 auto;
+
+}

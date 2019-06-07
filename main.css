@@ -35,64 +35,74 @@ or
 body {
     display: flex;
     flex-direction: column;
+    /* vertical */
     justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    margin: 0 auto;
+    /* horizontal */
+    align-items: center;
+    width: 100vw;
+    margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     letter-spacing: 1px;
     font-size: 16px;
 }
-.header {
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+.main {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
-    /* background-color: #D8D6D3; */
+    /* display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    -moz-justify-content: center;
+    -moz-align-items: center;
+    -ms-justify-content: center;
+    -ms-align-items: center; */
+    justify-content: center;
+    align-items: center;
+    padding: 0 3%;
+    width: 100%;
 }
-.header div .headerLogo {
-    transition: 200ms;
-    margin-top: 9%;
-    height: 28vh;
-    background-size: contain;
-    background-image: url("./img/bbh-logo.png");
-    background-repeat: no-repeat;
-    background-position: top;
+.full {
+    border: 2px solid black;
+    width: 94%;
+    margin: 20px auto;
+    background-color: rgba(51, 51, 51, .2);
 }
-
 nav {
+    position: fixed;
+    top: 0;
+    z-index: 10;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    font-family: Helvetica, sans-serif;
-    font-size: 100%;
-    width: 100%;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
     height: 10vh;
-    background-color: #B99862;
-    color: #fff;
+    background-color: rgb(185, 152, 98);
 }
 nav a {
-    font-size: 16px;
-    width: 30%;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;    
+    width: 20%;
     text-align: center;
     letter-spacing: 1px;
-    /* transition: 100ms; */
     display: flex;
     flex-direction: column;
-    line-height: 17px;
+    line-height: 30px;
+    color: #fff;
+    text-transform: uppercase;
 }
-.fixedNav {
-    position: fixed;
-    top: 0;
-    z-index: 10;
-}
-/* .scrollNav {
-    position: absolute;
-    bottom: 0;
-} */
 nav a:hover {
     transition: 500ms;
     color: rgba(255, 255, 255, .5);
@@ -107,19 +117,22 @@ nav span {
     margin: 0;
     padding: 0;
 }
-.section {
-    background-color: rgba(51, 51, 51, .2);
-    margin: 20px auto;
-
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 98%;
+    margin: 0;
+    padding: 0;
 }
-.card {
-    /* width: 100%;
-    padding: 2%;
-    margin: 0 auto; */
 
+.card {
     background-color: #CFB893;
 }
-
+.title {
+    text-transform: uppercase;
+}
 
 /* SPECIFIC SECTIONS */
 
@@ -132,7 +145,6 @@ nav span {
 .program {
     display: flex;
     flex-direction: row;
-    /* .project { */
     letter-spacing: 3pt;
     padding: 0;
     margin: 0 0 50px;
@@ -142,45 +154,8 @@ nav span {
 .problem, .solution {
     display: block;
     height: 100%;
-    width: 46%;
-    margin: 0 auto;
-}
-.program-img {
-    background-color: rgb(247, 115, 8);
-    height: 300px;
     width: 300px;
-    margin: 0;
-    padding: 0;
-}
-.program-img img {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: 1s;
-}
-.hidden {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 280px;
-}
-.program-img img {
-    z-index: 2;
-}
-.program-img p, .program-img a {
-    position: relative;
-    top: -300px;
-    padding: 10px 20px;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-}
-.hidden p {
-    width: 90%;
     margin: 0 auto;
-}
-/* .card-image {
+    overflow: hidden;
 
-} */
+}

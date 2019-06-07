@@ -25,7 +25,7 @@ function stickyNav() {
 
 
 $(window).scroll(function() {
-    stickyNav();
+    // stickyNav();
     stickyLogo();
 });
 

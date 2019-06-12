@@ -1,5 +1,4 @@
 
-
 // Fixed NavBar
 
 var offsetNav = $("nav").offset().top;
@@ -24,29 +23,52 @@ function stickyNav() {
 };
 
 
-$(window).scroll(function() {
-    // stickyNav();
-    stickyLogo();
-});
+// $(window).scroll(function() {
+//     // stickyNav();
+//     stickyLogo();
+// });
 
-// moving BBH logo
+// // moving BBH logo
 
-var offsetLogo = $(".headerLogo").offset().top;
-$(window).resize(function(){
-    offsetLogo = $(".headerLogo").offset().top;
-})
+// var offsetLogo = $(".headerLogo").offset().top;
+// $(window).resize(function(){
+//     offsetLogo = $(".headerLogo").offset().top;
+// })
 
-function stickyLogo() {
-    var scrolltop = $(window).scrollTop();
-    var dist = (offsetLogo - scrolltop);
+// function stickyLogo() {
+//     var scrolltop = $(window).scrollTop();
+//     var dist = (offsetLogo - scrolltop);
 
-    if (dist <= 0)
-    {
-        $(".headerLogo").removeClass("scrollLogo");
-        $(".headerLogo").addClass("fixedLogo");
-    } else 
-    {
-        $(".headerLogo").removeClass("fixedLogo");
-        $(".headerLogo").addClass("scrollLogo");
+//     if (dist <= 0)
+//     {
+//         $(".headerLogo").removeClass("scrollLogo");
+//         $(".headerLogo").addClass("fixedLogo");
+//     } else 
+//     {
+//         $(".headerLogo").removeClass("fixedLogo");
+//         $(".headerLogo").addClass("scrollLogo");
+//     }
+// }
+
+// 
+
+
+const makeSquares = function() {
+    const squares = $('.squares');
+    for (i = 0; i < 10; i++) {
+        let row = '<div class="square-row square-row' + i + '">';
+        for (i = 0; i < 10; i++) {
+            $(row).append('<div class="square-new square-new' + i + '"></div>')
+            console.log("square-new" + i)
+        }
+        $(row).append('</div>');
+        $(squares).append(row);
+        console.log(row)
+
     }
-}
+} 
+
+
+$(document).ready(function() {
+    makeSquares();
+})

@@ -68,7 +68,13 @@ const makeSquares = function() {
     }
 } 
 
+// Mobile Nav:
 
-$(document).ready(function() {
-    makeSquares();
-})
+$(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+
+
+// $(document).ready(function() {
+//     makeSquares();
+// })

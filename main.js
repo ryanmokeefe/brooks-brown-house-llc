@@ -6,6 +6,9 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('.carousel').carousel();
 });
+
+// TODO: Lazy Loading, Parallax
+
       
 // Fixed NavBar
 // var offsetNav = $("#missionStatement").offset().top;

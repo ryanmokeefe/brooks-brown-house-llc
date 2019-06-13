@@ -185,7 +185,9 @@ body, .container {
 .header {
     z-index: -1;
     /* display: relative;
-    position: fixed; */
+    position: fixed; 
+    background-attachment: fixed;
+    */
     object-fit: contain;
     overflow: hidden;
     margin: 0 auto;
@@ -193,7 +195,6 @@ body, .container {
     width: 50vh;
     height: 50vh;
     background-image: url("./img/IMG_1836.PNG");
-    /* background-attachment: fixed; */
     background-size: 50vh auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -486,12 +487,7 @@ footer span {
     background-image: url('./img/bg/hide-obara-2034-unsplash.jpg');
 }
 /* Carousel */
-.carousel {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
+
 .flip-img img {
     transform: rotate(90deg);
 }

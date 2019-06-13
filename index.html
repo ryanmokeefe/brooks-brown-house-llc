@@ -16,20 +16,30 @@
 <body>
     <div class="container">
 <!-- mobile nav -->
-    <nav class="nav-mobile">
+    <nav isFixed=true class="nav-mobile">
         <ul id="slide-out" class="sidenav">
-            <li><div class="user-view">
-            <div class="background">
-                <img src="./img/bbh-logo.png">
-            </div>
-            </div></li>
-            <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-            <li><a href="#!">Second Link</a></li>
+            <li>
+                <div class="exit-nav">
+                <ul id="slide" class="sidenav">
+                    <li><a class="sidenav-close sidenav-icon" href="#!"></a></li>
+                </ul>
+                <!-- trigger -->
+                <a href="#" data-target="slide-out" class="sidenav-close sidenav-exit"></a>
+                                 
+                </div>
+                <div class="background nav-logo"></div>
+            </li>
             <li><div class="divider"></div></li>
             <li><a class="subheader">Subheader</a></li>
-            <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-        </ul>
-        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <li><a class="sidenav-close waves-effect" href="#program">Program</a></li>
+            <li><a class="sidenav-close waves-effect" href="#team">Team</a></li>
+            <li><a class="sidenav-close waves-effect" href="#how">How it Works</a></li>
+            <li><a class="sidenav-close waves-effect" href="#model">Model</a></li>
+            <li><a class="sidenav-close waves-effect" href="#homebuyer">Tenant to Homebuyer Program</a></li>
+            <li><a class="sidenav-close waves-effect" href="#contact">Contact Us</a></li>
+            </ul>
+            <a href="#" data-target="slide-out" class="nav-open sidenav-trigger sidenav-icon"><i class="material-icons"></i></a>
+                        
     </nav>
 <!-- desktop nav -->
         <nav class="nav-wide">
@@ -47,13 +57,13 @@
             </div>
         </div>        
         <div class="main">
-            <div class="missionStatement full center-align">
+            <div id="missionStatement" class="missionStatement full center-align">
                 <span class="title">Our Mission:</span>
                     <p>To assist families in their transition to build generational wealth through homeownership. </p>
             </div>
         </div>
 
-        <div class="main bg-shift program-bg">
+        <div id="program" class="main bg-shift program-bg">
             <div class="section-header">Program</div>
         </div> 
 
@@ -80,17 +90,38 @@
                     " Overall, housing equity makes up about <span class="bold underline">two-thirds of all wealth</span> for the typical (median) household. In short, for median families, the racial wealth gap is primarily a housing wealth gap." 
                     <span class="source">- Janelle Jones | February 13, 2017 | Ecomnomc Policy Institute</span> 
                 </p>
-                <div id="img-flex">
+                <div class="carousel">
+                    <a class="carousel-item" href="#two!"><img src="./img/IMG_1327.JPG"></a>
+                    <a class="carousel-item" href="#three!"><img src="./img/IMG_1534.jpg"></a>
+                    <!-- 05 -->
+                    <a class="flip-img carousel-item" href="#four!"><img src="./img/IMG_1305.JPG"></a>
+                    <!-- 06 -->
+                    <a class="flip-img carousel-item" href="#five!"><img src="./img/IMG_1306.JPG"></a>
+                    <a class="carousel-item" href="#five!"><img src="./img/IMG_1309.JPG"></a>
+                    <!-- 14 -->
+                    <a class="flip-img carousel-item" href="#five!"><img src="./img/IMG_1314.JPG"></a>
+                    <!-- 20 -->
+                    <a class="flip-img carousel-item" href="#five!"><img src="./img/IMG_1320.JPG"></a>
+                    <!-- 24 -->
+                    <a class="flip-img carousel-item" href="#five!"><img src="./img/IMG_1324.JPG"></a>
+                    <a class="carousel-item" href="#five!"><img src="./img/IMG_1328.JPG"></a>
+                    <a class="carousel-item" href="#five!"><img src="./img/IMG_1533.PNG"></a>
+                    <a class="carousel-item" href="#five!"><img src="./img/IMG_1536.jpg"></a>
+                    <a class="carousel-item" href="#five!"><img src="./img/IMG_1537.jpg"></a>
+                    <a class="carousel-item" href="#five!"><img src="./img/IMG_1538.jpg"></a>
+                </div>
+
+                <!-- <div id="img-flex">
                     <img class="img-example" src="./img/IMG_1286.jpg" alt="home renovations">
                     <img class="img-example" src="./img/IMG_1327.JPG" alt="home renovations">
                     <img class="img-example" src="./img/IMG_1534.jpg" alt="home renovations">
-                </div>
-                <div class="more">See More Work</div>
+                </div> -->
+                <!-- <div class="more">See More Work</div> -->
             </div>
         </div>
         
 <!-- TEAM -->
-        <div class="main bg-shift team-bg">
+        <div id="team" class="main bg-shift team-bg">
             <div class="section-header">Our Team</div>
         </div> 
         <div class="main">
@@ -111,7 +142,7 @@
         </div>
 
 <!-- HOW IT WORKS -->
-        <div class="main bg-shift how-bg">
+        <div id="how" class="main bg-shift how-bg">
             <div class="section-header">How it Works</div>
         </div> 
         <div class="main">
@@ -142,7 +173,7 @@
        
 
 <!-- CALL TO ACTION -->        
-        <div class="main bg-shift why-bg">
+        <div id="why" class="main bg-shift why-bg">
             <div class="section-header">Why Now?</div>
         </div> 
         <div class="main">      
@@ -156,7 +187,7 @@
         </div>
     
 <!-- REVENUE MODEL -->
-        <div class="main bg-shift model-bg">
+        <div id="model" class="main bg-shift model-bg">
             <div class="section-header">Model</div>
         </div> 
         <div class="main">
@@ -194,7 +225,7 @@
         </div>    
     
 <!-- TENANT TO HOMEBUYER -->
-        <div class="main bg-shift homebuyer-bg">
+        <div id="homebuyer" class="main bg-shift homebuyer-bg">
             <div class="section-header">Tenant to Homebuyer Program</div>
         </div> 
         <div class="main">      
@@ -216,7 +247,7 @@
         </div>
 
 <!-- CHANGE OUR COMMUNITY -->
-        <div class="main bg-shift change-together">
+        <div id="contact" class="main bg-shift change-together">
             <div class="section-header">LETS CHANGE OUR COMMUNITY TOGETHER</div>
         </div> 
     <!-- <div class="main">

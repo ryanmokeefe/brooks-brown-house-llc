@@ -61,7 +61,7 @@ body, .container {
 }
 .container {
     /* margin = nav height */
-    margin: 7vh auto;
+    margin: 0 auto;
     width: 100vw;
 }
 .main {
@@ -106,9 +106,64 @@ body, .container {
     text-transform: uppercase;
     letter-spacing: 2pt;
 }
+/* NAV - Mobile */
+/* nav {
+    position: fixed;
+    top: 0;
+    background-color: rgba(185, 152, 98, .5);
+}
+.nav-m-button-scroll {
+    background-color: rgba(185, 152, 98, .5);
+    border-radius: 10px;
+}
+.nav-m-scroll {
+    background-color: transparent;
+} */
 .nav-wide {
     display: none;
 }
+.nav-mobile {
+    background-color: #B99862;
+    margin: 0;
+}
+.sidenav-icon {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.nav-open {
+    background-image: url('./img/icons/menu-button.svg');
+    height: 50px;
+    width: 50px;
+}
+.sidenav-exit {
+    margin: 0 100px 0 0;
+    background-image: url("./img/icons/exit-button.svg");
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    z-index: 2;
+ }
+ .exit-nav {
+     margin: 10px 0 0 10px;
+     width: 90%;
+     height: 50px;
+ }
+.nav-logo {
+    background-image: url("./img/bbh-logo.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    height: 20vh;
+    width: 100%;
+}
+.waves-effect {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+/*  */
 .full {
     display: flex;
     flex-direction: column;
@@ -129,8 +184,8 @@ body, .container {
 }
 .header {
     z-index: -1;
-    display: relative;
-    position: fixed;
+    /* display: relative;
+    position: fixed; */
     object-fit: contain;
     overflow: hidden;
     margin: 0 auto;
@@ -138,7 +193,7 @@ body, .container {
     width: 50vh;
     height: 50vh;
     background-image: url("./img/IMG_1836.PNG");
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-size: 50vh auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -187,9 +242,7 @@ h4 {
     height: auto;
     margin: 5vw auto;
 }
-
 /* TEAM */
-
 .img-team {
     width: 100%;
     position: relative;
@@ -218,9 +271,7 @@ h4 {
     background-color: white;
     box-shadow: 2px 2px 5px #B99862;
 }
-
 /* HOW IT WORKS */
-
 .how  {
     display: flex;
     flex-direction: column;
@@ -278,9 +329,7 @@ h4 {
     padding: 0;
     background-color: #28170D;
 }
-
 /* MODEL */
-
 .revenueModel .list li {
     margin: 0 auto;
     padding: 4vw 2vw;
@@ -304,7 +353,7 @@ h4 {
     margin: 0 auto;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     letter-spacing: 2pt;
     color: #28170D;
 }
@@ -319,17 +368,13 @@ h4 {
     margin: 0 auto;
     padding: 0;
 }
-
 /* MILESTONES */
-
 .milestones img {
     position: relative;
     left: -1px;
     width: 100%;
 }
-
 /* TENANT TO HOMEBUYER */
-
 .tenant-span {
     display: flex;
     flex-direction: column;
@@ -361,7 +406,9 @@ h4 {
     border-right: 1px solid #B99862;
 }
 /* ACTION */
-
+.why-now span, .why-now p {
+    font-size: 1.25rem;
+}
 .action {
     color: #B99862;
 }
@@ -370,9 +417,7 @@ h4 {
     font-weight: 900;
     letter-spacing: .5rem;
 }
-
 /* CONTACT */
-
 .icon-tray {
     display: flex;
     flex-direction: row;
@@ -382,7 +427,6 @@ h4 {
     width: 75vw;
     margin: 20vw auto 0;
     padding: 0;
-
 }
 .icon {
     background-size: cover;
@@ -418,11 +462,9 @@ footer span {
     color: #B99862;
     height: 50px;
 }
-
 /* BACKGROUNDS */
-
 .program-bg {
-    background-image: url("./img/bg/julian-gentilezza-351164-unsplash.jpg");   
+    background-image: url("./img/bg/julian-gentilezza-351164-unsplash.jpg");  
 }
 .team-bg {
     background-image: url("./img/wood/wood.jpg");
@@ -443,9 +485,27 @@ footer span {
     /* background-image: url('./img/IMG_1378.jpg'); */
     background-image: url('./img/bg/hide-obara-2034-unsplash.jpg');
 }
-
-
+/* Carousel */
+.carousel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.flip-img img {
+    transform: rotate(90deg);
+}
 @media only screen and (min-width: 500px) {
+    .why-now span, .why-now p {
+        font-size: 1.5rem;
+    }
+    .model-title {
+        font-size: 2rem;
+    }
+    .container {
+        /* Margin = nav height */
+        margin: 7vh auto;
+    }
     .nav-mobile {
         display: none;
     }
@@ -460,7 +520,7 @@ footer span {
         width: 100vw;
         margin: 0;
         padding: 0;
-    /* height = .container margin-top */
+    /* Height = .container margin-top */
         height: 7vh;
         background-color: #b99862;
         /* background-color: #28170D; */
@@ -492,4 +552,9 @@ footer span {
         margin: 0;
         padding: 0;
     }
+
+}
+
+@media only screen and (min-width: 800px) {
+/* SIZE - ? */
 }

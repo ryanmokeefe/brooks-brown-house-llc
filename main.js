@@ -34,22 +34,3 @@ $(document).ready(function(){
 //     stickyNav();
 // });
 
-// TODO: 
-
-// const makeSquares = function() {
-//     const squares = $('.squares');
-//     for (i = 0; i < 10; i++) {
-//         let row = '<div class="square-row square-row' + i + '">';
-//         for (i = 0; i < 10; i++) {
-//             $(row).append('<div class="square-new square-new' + i + '"></div>')
-//             console.log("square-new" + i)
-//         }
-//         $(row).append('</div>');
-//         $(squares).append(row);
-//         console.log(row)
-
-//     }
-// } 
-// $(document).ready(function() {
-//     makeSquares();
-// })

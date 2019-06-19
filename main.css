@@ -9,43 +9,13 @@ Color Palette:
 
     #CFB893 nav-span
 
- 
-
-
-    #8E8E8E grey
-    #CD853F burnt-sienna
-    #B99862 BBH-brown
-    #CFB893 light-tan
-    #F4F2EE BBH-light
-or
-    #B99862 BBH-brown
-    #987d52 faded-tan
-    #594a32 ash-brown;
-    #3c3224 dark-brown
-    #3A2313 espresso 1
-    #301D0E espresso 2
-    #28170D espresso 3
-    #333333 slate-gray
-    #000000 black
-
-    #b7797c pink
-    #6d94be grey-blue
-    #4b94d0 blue
-    #46679d darker-grey-blue
-*/
-
-/* 
-        Striped BG:
-    background: repeating-linear-gradient(
-        135deg,
-        #606dbc,
-        #606dbc 10px,
-        #465298 10px,
-        #465298 20px
-    );
+  */
     
-*/
 
+html {
+    scroll-behavior: smooth;
+    transition: 300ms;
+  }
 body, .container {
     display: flex;
     flex-direction: column;
@@ -85,11 +55,22 @@ body, .container {
     background-color: white;
 }
 .bg-shift {
+    display: table;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
     background-attachment: fixed;
-    background-size: cover; 
     background-repeat: no-repeat;
     height: 50vh;
     padding: 0 10%;
+
+
+
 }
 .section-header {
     background-color: rgba(255, 255, 255, .5);

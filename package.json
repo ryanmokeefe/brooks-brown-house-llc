@@ -1,0 +1,23 @@
+{
+  "name": "brooks-brown-house-llc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "materialize-css": "^1.0.0-rc.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanmokeefe/brooks-brown-house-llc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanmokeefe/brooks-brown-house-llc/issues"
+  },
+  "homepage": "https://github.com/ryanmokeefe/brooks-brown-house-llc#readme"
+}

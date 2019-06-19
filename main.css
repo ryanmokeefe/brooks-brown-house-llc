@@ -230,7 +230,9 @@ h4 {
 /* PROGRAM */
 .img-chart {
     width: 80vw;
+    max-width: 450px;
     height: auto;
+    margin: 0 auto;
 }
 #img-flex {
     object-fit: contain;
@@ -246,13 +248,14 @@ h4 {
 /* TEAM */
 .img-team {
     width: 100%;
+    max-width: 400px;
     position: relative;
     top: -80px;
 }
 .img-team-frame {
     object-fit: contain;
     overflow: hidden;
-    height: 100vw;
+    /* height: 100vw; */
     margin: 25px auto;
 }
 .more {
@@ -412,11 +415,13 @@ h4 {
 }
 .action {
     color: #B99862;
+    transition: 100ms;
+
 }
 .action:hover {
-    text-decoration: underline;
     font-weight: 900;
     letter-spacing: .5rem;
+    transition: 300ms;
 }
 /* CONTACT */
 .icon-tray {
@@ -551,6 +556,77 @@ footer span {
 
 }
 
-@media only screen and (min-width: 800px) {
-/* SIZE - ? */
+@media only screen and (min-width: 700px) {
+    .bg-shift {
+        background-size: cover; 
+        background-position-y: -15vh; 
+        height: 100vh;
+    }
+    .header-full {
+        /* 25vh - 7vh (nav H) */
+        padding: 18vh 3% 25vh;
+    }
+    .title {
+        margin: 10% auto;
+    }
+    .full {
+        width: 60vw;
+    } 
+    .main {
+        padding: 0 15vw;
+    }
+    .how {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;    
+    }
+    .how p {
+        margin: 2vw auto;
+        padding: 5vw;
+        width: 80%;
+    }
+    .revenueModel p, .milestones p {
+        padding: 0;
+        margin: 5vh auto 15vh;
+    }
+    .revenueModel .list li {
+        width: 85%;
+    }
+    .model-title {
+        height: 10vw;
+        width: 50vw;
+    }
+    .milestones-img-frame {
+        object-fit: contain;
+        overflow: hidden;
+        width: 50vw;
+        margin: 0 auto;
+    }
+    .tenant-span {
+        width: 100%;
+        margin: 15% auto 10%;
+        font-size: 1.75rem;
+    }
+    .tenant-span span {
+        width: 100%;
+    }
+    .tenant-steps {
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .tenant-steps li {
+        list-style-position: outside;
+        margin: 5vw auto;
+        padding: 7% 5%;
+        width: 80%;
+        /* border-bottom: 1px solid #B99862; */
+    }
+    /* .tenant-steps li:nth-child(odd) {
+        border-left: none;
+    }
+    .tenant-steps li:nth-child(even) {
+        border-right: none;
+    }  */
+
 }

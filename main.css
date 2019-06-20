@@ -55,7 +55,7 @@ body, .container {
     background-color: white;
 }
 .bg-shift {
-    display: table;
+    /* display: table; */
     height: 100%;
     width: 100%;
     position: relative;

@@ -7,6 +7,7 @@ $(document).ready(function(){
     $('.carousel').carousel();
 });
 
+
 // TODO: Lazy Loading, Parallax
 
       

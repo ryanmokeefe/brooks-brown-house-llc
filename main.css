@@ -1,6 +1,7 @@
 
 :root {
     --bbh-brown: #B99862;
+    --color: #dac8ab;
     --bbh-light: #F4F2EE; 
     --bbh-espresso: #28170D;
     
@@ -432,8 +433,8 @@ h4 {
     color: var(--bbh-espresso);
 }
 .action-button:focus {
-    background-color: var(--bbh-brown);
-    color: #fff;
+    background-color: #fff;
+    color: var(--bbh-espresso);
 }
 
 
@@ -448,27 +449,27 @@ h4 {
     margin: 20vw auto 0;
     padding: 0;
 }
-/* .icon {
-    height: 50px;
-    width: 50px;
-} */
 .icon-img {
     background-size: cover;
     background-repeat: no-repeat;
     height: 50px;
     width: 50px;
 }
-.icon-twitter .icon-img {
+.twitter {
     transition: 200ms;
     background-image: url("./img/icons/twitter2.svg")
 }
-.icon-fb .icon-img {
+.facebook {
     transition: 200ms;
     background-image: url("./img/icons/fb2.svg")
 }
-.icon-youtube .icon-img {
+.youtube {
     transition: 200ms;
     background-image: url("./img/icons/youtube2.svg")
+}
+.email {
+    transition: 200ms;
+    background-image: url("./img/icons/email2.png")
 }
 .icon-name {
     display: none;
@@ -590,6 +591,9 @@ footer span {
     .main {
         padding: 0 15vw;
     }
+    .missionStatement p {
+        margin: 0 auto 20vh;
+    }
     .how {
         width: 100%;
         margin: 0 auto;
@@ -635,15 +639,7 @@ footer span {
         margin: 5vw auto;
         padding: 7% 5%;
         width: 80%;
-        /* border-bottom: 1px solid var(--bbh-brown); */
     }
-    /* .tenant-steps li:nth-child(odd) {
-        border-left: none;
-    }
-    .tenant-steps li:nth-child(even) {
-        border-right: none;
-    }  */
-
     .contact .full {
         height: 50vh;
     }
@@ -665,6 +661,23 @@ footer span {
     .icon div {
         margin: 0 auto;
     }
+    .icon-tray:hover .twitter {
+        transition: 300ms;
+        background-image: url("./img/icons/twitter1.svg")
+    }
+    .icon-tray:hover .facebook {
+        transition: 300ms;
+        background-image: url("./img/icons/fb1.svg")
+    }
+    .icon-tray:hover .youtube {
+        transition: 300ms;
+        background-image: url("./img/icons/youtube1.svg")
+    }
+    .icon-tray:hover .email {
+        transition: 300ms;
+        background-image: url("./img/icons/email1.png")
+    }
+    /*  */
     .icon-twitter:hover .icon-img {
         transition: 300ms;
         background-image: url("./img/icons/twitter4.svg")
@@ -676,6 +689,10 @@ footer span {
     .icon-youtube:hover .icon-img {
         transition: 300ms;
         background-image: url("./img/icons/youtube4.svg")
+    }
+    .icon-email:hover .icon-img {
+        transition: 300ms;
+        background-image: url("./img/icons/email4.png")
     }
     .icon-name {
         display: flex;

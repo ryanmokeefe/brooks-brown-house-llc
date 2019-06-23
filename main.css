@@ -455,9 +455,9 @@ h4 {
     height: 50px;
     width: 50px;
 }
-.twitter {
+.instagram {
     transition: 200ms;
-    background-image: url("./img/icons/twitter2.svg")
+    background-image: url("./img/icons/instagram2.svg")
 }
 .facebook {
     transition: 200ms;
@@ -661,9 +661,9 @@ footer span {
     .icon div {
         margin: 0 auto;
     }
-    .icon-tray:hover .twitter {
+    .icon-tray:hover .instagram {
         transition: 300ms;
-        background-image: url("./img/icons/twitter1.svg")
+        background-image: url("./img/icons/instagram1.svg")
     }
     .icon-tray:hover .facebook {
         transition: 300ms;
@@ -678,9 +678,9 @@ footer span {
         background-image: url("./img/icons/email1.png")
     }
     /*  */
-    .icon-twitter:hover .icon-img {
+    .icon-instagram:hover .icon-img {
         transition: 300ms;
-        background-image: url("./img/icons/twitter4.svg")
+        background-image: url("./img/icons/instagram4.svg")
     }
     .icon-fb:hover .icon-img {
         transition: 300ms;

@@ -19,7 +19,7 @@
 html {
     scroll-behavior: smooth;
     transition: 300ms;
-  }
+}
 body, .container {
     display: flex;
     flex-direction: column;
@@ -71,9 +71,6 @@ body, .container {
     background-repeat: no-repeat;
     height: 50vh;
     padding: 0 10%;
-
-
-
 }
 .section-header {
     background-color: rgba(255, 255, 255, .5);
@@ -88,6 +85,63 @@ body, .container {
     text-transform: uppercase;
     letter-spacing: 2pt;
 }
+.contact-a {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.contact-a:hover {
+    transition: 300ms;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.house-icon {
+    transition: 300ms;
+    height: 45px;
+    width: 45px;
+    margin: 0 auto;
+    padding: 0;
+}
+.contact-a:hover .house-icon {
+    transition: 300ms;
+    margin: 0;
+}
+.contact-name {
+    display: none;
+    flex-direction: column;
+    width: 20%;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;    
+    text-align: center;
+    letter-spacing: 1.5px;
+    line-height: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.contact-a:hover .contact-name {
+    transition: 600ms;
+    display: inline-block;
+
+}
+/* .contact-a:hover .contact-name {
+    transition: 500ms;
+    display: inline-block;
+    position: relative;
+    left: 50px;
+    bottom: 3.5vh;
+    margin: 0;
+    padding: 0;
+}
+.contact-a:hover .house-icon {
+    transition: 300ms;
+    position: relative;
+    right: 20px;
+    margin: 0 auto;
+    padding: 0;
+} */
 /* NAV - Mobile */
 /* nav {
     position: fixed;
@@ -561,7 +615,6 @@ footer span {
         letter-spacing: 2px;
     }
     .nav-wide span {
-        /* border: 2px solid #CFB893; */
         border: 2px solid rgba(255, 255, 255, .5);
         border-radius: 10px;
         height: 5.5vh;

@@ -85,64 +85,9 @@ body, .container {
     text-transform: uppercase;
     letter-spacing: 2pt;
 }
-.contact-a {
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-.contact-a:hover {
-    transition: 300ms;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
-.house-icon {
-    transition: 300ms;
-    height: 45px;
-    width: 45px;
-    margin: 0 auto;
-    padding: 0;
-}
-.contact-a:hover .house-icon {
-    transition: 300ms;
-    margin: 0;
-}
-.contact-name {
-    display: none;
-    flex-direction: column;
-    width: 20%;
-    font-family: Helvetica, sans-serif;
-    font-size: 14px;    
-    text-align: center;
-    letter-spacing: 1.5px;
-    line-height: 20px;
-    color: #fff;
-    text-transform: uppercase;
-}
-.contact-a:hover .contact-name {
-    transition: 600ms;
-    display: inline-block;
 
-}
-/* .contact-a:hover .contact-name {
-    transition: 500ms;
-    display: inline-block;
-    position: relative;
-    left: 50px;
-    bottom: 3.5vh;
-    margin: 0;
-    padding: 0;
-}
-.contact-a:hover .house-icon {
-    transition: 300ms;
-    position: relative;
-    right: 20px;
-    margin: 0 auto;
-    padding: 0;
-} */
 /* NAV - Mobile */
+
 /* nav {
     position: fixed;
     top: 0;
@@ -213,8 +158,10 @@ body, .container {
     color: var(--bbh-espresso);
 }
 .header-full {
+    /* TODO: remove border */
     padding: 0 3% 20%;
-    background-color: var(--bbh-light);
+    /* background-color: var(--bbh-light); */
+    background-color: white;
     min-height: 70vh;
     z-index: -2;
 }
@@ -622,7 +569,55 @@ footer span {
         margin: 0;
         padding: 0;
     }
+    /* HOUSE ICON */
 
+    /* .contact-a {
+        transition: 300ms;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    } */
+    /* 
+    .contact-a:hover {
+    .contact-a {
+        transition: 300ms;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .house-icon {
+        transition: 300ms;
+        height: 45px;
+        width: 45px;
+        margin: 0;
+        padding: 0;
+    }
+    .contact-a:hover .house-icon {
+        transition: 300ms;
+        margin: 0;
+    }
+    .contact-name {
+        display: none;
+        width: 20%;
+        font-family: Helvetica, sans-serif;
+        font-size: 14px;    
+        text-align: center;
+        letter-spacing: 1.5px;
+        line-height: 20px;
+        color: #fff;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+    }
+    .contact-a:hover .contact-name {
+        display: flex;
+        transition: 600ms;
+    } */
 }
 
 @media only screen and (min-width: 700px) {
